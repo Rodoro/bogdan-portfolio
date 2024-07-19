@@ -12,12 +12,15 @@ const config: Config = {
     extend: {
       colors: COLORS,
       fontFamily: {
-        'cabin' : ['var(--font-cabin)']
+        'cabin': ['var(--font-cabin)']
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      screens: {
+        xs: "450px",
       },
     },
   },

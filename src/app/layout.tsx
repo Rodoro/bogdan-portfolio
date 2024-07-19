@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cabin } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 const cabin = Cabin({
   subsets: ["latin"],
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={cabin.variable}>
+        <Navbar />
         {children}
       </body>
     </html>

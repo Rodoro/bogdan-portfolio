@@ -2,7 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .paddingX {
+    @apply sm:px-16 px-6;
+  }
+
+  .heroHeadText {
+    @apply font-cabin text-white lg:text-[64px] sm:text-[42px] xs:text-[32px] text-[20px] mt-2 font-bold leading-[110%];
+  }
+
+  .heroSubText {
+    @apply text-white font-medium lg:text-[20px] sm:text-[16px] xs:text-[10px] text-[6px];
+  }
+}
+
 body {
   color: #fff;
   background: #050716;
+}
+
+.primary-gradient {
+  background: #E52E20;
+  background: linear-gradient(-90deg, #E52E20 0%, rgba(60, 51, 80, 0) 100%);
+  background: -webkit-linear-gradient(-90deg,
+      #E52E20 0%,
+      rgba(60, 51, 80, 0) 100%);
 }
