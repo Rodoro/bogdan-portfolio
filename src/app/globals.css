@@ -21,10 +21,36 @@ body {
   background: #050716;
 }
 
+h2 {
+  @apply font-cabin text-white lg:text-[40px] sm:text-[22px] text-[12px] mt-2 font-bold leading-[110%];
+}
+
+h3 {
+  @apply font-cabin text-white lg:text-[24px] sm:text-[12px] text-[10px] mt-2 font-bold leading-[110%];
+}
+
+
 .primary-gradient {
   background: #E52E20;
   background: linear-gradient(-90deg, #E52E20 0%, rgba(60, 51, 80, 0) 100%);
   background: -webkit-linear-gradient(-90deg,
       #E52E20 0%,
       rgba(60, 51, 80, 0) 100%);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+*::-webkit-scrollbar-track {
+  display: none;
+}
+
+*::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  display: none;
 }
